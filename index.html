@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naël Lounes - E-Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Naël Lounes</div>
+            <ul class="nav-links">
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Profil / Accueil -->
+    <section id="profil" class="hero">
+        <div class="hero-content">
+            <h1>Naël Lounes</h1>
+            <h2>BTS SIO option SISR</h2>
+            <p>Etudiant en BTS SIO (SISR) </p>
+        </div>
+    </section>
+
+    <!-- Section Parcours -->
+    <section id="parcours" class="section">
+        <h2>Mon Parcours</h2>
+        
+        <!-- Sous-partie Scolaire -->
+        <h3 class="parcours-category">Scolaire</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">2026 - 2027</span>
+                <h3>BTS SIO - Option SISR (1ère et 2ème année)</h3>
+                <p>Lycée Turgot, Paris 3e</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2023 - 2025</span>
+                <h3>Baccalauréat STMG</h3>
+                <p>Lycée Jules Siegfried, Paris 10e</p>
+            </div>
+        </div>
+
+        <!-- Sous-partie Professionnel -->
+        <h3 class="parcours-category" style="margin-top: 40px;">Professionnel</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">2025 - Présent</span>
+                <h3>Gardien d'école</h3>
+                <p>CASPE du 19e arrondissement</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2023</span>
+                <h3>Déménagement</h3>
+                <p>Expérience professionnelle</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2022</span>
+                <h3>Travail d'aide à la comptabilité</h3>
+                <p>Expérience professionnelle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="section bg-dark">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <img src="images/certif1.png" alt="Certificat Internet of Things" class="cert-img">
+                <h3>Exploring Internet of Things with Cisco Packet Tracer</h3>
+                <p>Cisco Networking Academy[cite: 1]</p>
+                <span class="cert-date">29 Jan 2026[cite: 1]</span>
+            </div>
+            <div class="cert-card">
+                <img src="images/certif2.png" alt="Certificat Premiers pas Packet Tracer" class="cert-img">
+                <h3>Premiers pas avec Cisco Packet Tracer</h3>
+                <p>Cisco Networking Academy[cite: 2]</p>
+                <span class="cert-date">29 Jan 2026[cite: 2]</span>
+            </div>
+            <div class="cert-card">
+                <img src="images/certif3.png" alt="Certificat Exploring Networking" class="cert-img">
+                <h3>Exploring Networking with Cisco Packet Tracer</h3>
+                <p>Cisco Networking Academy[cite: 3]</p>
+                <span class="cert-date">29 Jan 2026[cite: 3]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <!-- 1. Systèmes -->
+            <div class="skill-box">
+                <i class="fa-solid fa-desktop"></i>
+                <h3>SYSTÈMES</h3>
+                <ul>
+                    <li>Installation/configuration des OS, des équipements</li>
+                    <li>Gestion des utilisateurs, droits d'accès</li>
+                    <li>Sécurisation des systèmes (mises à jour, antivirus...)</li>
+                    <li>Automatisation des tâches système (Bash)</li>
+                </ul>
+                <p class="skill-footer">Windows, Windows Server, Ubuntu, Debian</p>
+            </div>
+
+            <!-- 2. Réseaux -->
+            <div class="skill-box">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>RÉSEAUX</h3>
+                <ul>
+                    <li>Mise en place de réseaux locaux (LAN)</li>
+                    <li>Configuration de routeurs et commutateurs</li>
+                    <li>Configuration et gestion des pare-feu</li>
+                    <li>Dépannage et diagnostic réseau</li>
+                </ul>
+                <p class="skill-footer">Cisco, Packet Tracer, Wireshark</p>
+            </div>
+
+            <!-- 3. Cloud & Virtualisation -->
+            <div class="skill-box">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>CLOUD & VIRTUALISATION</h3>
+                <ul>
+                    <li>Mise en place de lab virtuel</li>
+                    <li>Création et gestion de machines virtuelles (VM)</li>
+                    <li>Installation et configuration des hyperviseurs</li>
+                </ul>
+                <p class="skill-footer">VirtualBox, VMware, Proxmox</p>
+            </div>
+
+            <!-- 4. Cybersécurité -->
+            <div class="skill-box">
+                <i class="fa-solid fa-lock"></i>
+                <h3>CYBERSÉCURITÉ</h3>
+                <ul>
+                    <li>Protection des données personnelles</li>
+                    <li>Sensibilisation des utilisateurs</li>
+                    <li>Surveillance et analyse des logs</li>
+                    <li>Gestion de mot de passe</li>
+                </ul>
+                <p class="skill-footer">Droits d'accès, normes, vocabulaire</p>
+            </div>
+
+            <!-- 5. Outils -->
+            <div class="skill-box">
+                <i class="fa-solid fa-wrench"></i>
+                <h3>OUTILS</h3>
+                <ul>
+                    <li>Supervision : Zabbix</li>
+                    <li>Analyse réseau : Wireshark</li>
+                    <li>Gestion de mot de passe : KeePass</li>
+                    <li>Gestion de configurations : Ansible</li>
+                </ul>
+            </div>
+
+            <!-- 6. Gestion de projet -->
+            <div class="skill-box">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3>GESTION DE PROJET</h3>
+                <ul>
+                    <li>Planification de projet</li>
+                    <li>Définition des objectifs et livrables</li>
+                    <li>Gestion des ressources</li>
+                    <li>Suivi des délais</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section bg-dark">
+        <h2>Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>A Venir</h3>
+                <p>A Venir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-box">
+            <h2>Contact</h2>
+            <p>Pour plus d'info veuillez m'envoyez un mail</p>
+            <a href="Lounesnael@gmail.com" class="btn">Envoyer un mail</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Naël Lounès. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
