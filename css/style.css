@@ -166,41 +166,23 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Style des tableaux pour la Synthèse E5 */
-.table-container {
-    width: 100%;
-    background: #1f1f1f;
-    border-radius: 8px;
-    border: 1px solid #2a2a2a;
-    overflow-x: auto;
-    margin-top: 15px;
+/* Bouton PDF de la Synthèse E5 */
+.btn-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ef4444;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
 }
 
-.synthese-table {
-    width: 100%;
-    border-collapse: collapse;
-    color: #f1f1f1;
-    font-size: 0.95rem;
-    text-align: left;
-}
-
-.synthese-table th, .synthese-table td {
-    padding: 15px 20px;
-    border-bottom: 1px solid #2a2a2a;
-}
-
-.synthese-table th {
-    color: #3b82f6;
-    font-weight: 600;
-    background-color: #181818;
-}
-
-.synthese-table tr:last-child td {
-    border-bottom: none;
-}
-
-.synthese-table tr:hover {
-    background-color: #252525;
+.btn-pdf:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
 }
 
 /* Section Contact */
