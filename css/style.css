@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,8 @@ body {
 
 /* Navigation */
 header {
-    background: #1a1a1a;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,6 +37,7 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
     color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -47,10 +50,11 @@ header {
     text-decoration: none;
     color: #b0b0b0;
     transition: color 0.3s;
+    font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-    color: #ffffff;
+    color: #3b82f6;
 }
 
 /* Sections */
@@ -66,7 +70,7 @@ header {
     padding: 80px 20px;
 }
 
-.bg-dark > h2, .bg-dark > .cert-grid, .bg-dark > .projects-grid {
+.bg-dark > h2, .bg-dark > .cert-grid, .bg-dark > .projects-grid, .bg-dark > .contact-box {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -139,7 +143,7 @@ h2 {
 /* Grilles (Certifications, Compétences, Projets) */
 .cert-grid, .skills-grid, .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -148,17 +152,55 @@ h2 {
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #2a2a2a;
-    transition: transform 0.3s;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
 .cert-card:hover, .skill-box:hover, .project-card:hover {
     transform: translateY(-5px);
+    border-color: #3b82f6;
 }
 
 .cert-card i, .skill-box i {
     font-size: 2rem;
     color: #3b82f6;
     margin-bottom: 15px;
+}
+
+/* Style des tableaux pour la Synthèse E5 */
+.table-container {
+    width: 100%;
+    background: #1f1f1f;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.synthese-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f1f1f1;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.synthese-table th, .synthese-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.synthese-table th {
+    color: #3b82f6;
+    font-weight: 600;
+    background-color: #181818;
+}
+
+.synthese-table tr:last-child td {
+    border-bottom: none;
+}
+
+.synthese-table tr:hover {
+    background-color: #252525;
 }
 
 /* Section Contact */
@@ -186,7 +228,9 @@ h2 {
 }
 
 .btn, .btn-linkedin {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: #ffffff;
     color: #121212;
     padding: 10px 20px;
@@ -247,7 +291,7 @@ footer {
 .parcours-category {
     font-size: 1.3rem;
     color: #3b82f6;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 600;
 }
 
@@ -261,10 +305,27 @@ footer {
 
 .cert-img {
     width: 100%;
-    height: 120px; /* Réduis cette valeur si tu veux que ce soit encore plus petit (ex: 90px) */
-    object-fit: contain; /* Garde l'image entière sans couper les bords */
-    background-color: #ffffff; /* Fond blanc si l'image a des marges transparentes */
+    height: 120px;
+    object-fit: contain;
+    background-color: #ffffff;
     border-radius: 6px;
     margin-bottom: 15px;
     border: 1px solid #333;
+}
+
+/* Responsive design de base pour mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
 }
