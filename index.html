@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naël Lounes - E-Portfolio</title>
+    <title>Naël Lounes - E-Portfolio SISR</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,13 +12,14 @@
     <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <div class="logo">Naël Lounes</div>
+            <div class="logo">Naël Lounes<span>.</span></div>
             <ul class="nav-links">
                 <li><a href="#profil">Profil</a></li>
                 <li><a href="#parcours">Parcours</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets</a></li>
+                <li><a href="#procedures">Procédures</a></li>
                 <li><a href="#synthese">Synthèse E5</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -28,21 +29,26 @@
     <!-- Section Profil / Accueil -->
     <section id="profil" class="hero">
         <div class="hero-content">
+            <span class="hero-badge">BTS SIO • Option SISR • Session 2027</span>
             <h1>Naël Lounes</h1>
-            <h2>BTS SIO option SISR</h2>
-            <p>Étudiant en BTS SIO (Solutions d'Infrastructure, Systèmes et Réseaux), passionné par l'informatique, la cybersécurité et l'administration système.</p>
+            <h2>Administrateur Systèmes &amp; Réseaux en formation</h2>
+            <p>Étudiant en 2ème année de BTS SIO (Solutions d'Infrastructure, Systèmes et Réseaux) au Lycée Turgot, passionné par l'administration système, l'infrastructure réseau et la cybersécurité.</p>
+            <div class="hero-actions">
+                <a href="#projets" class="btn-primary"><i class="fa-solid fa-folder-open"></i> Voir mes projets</a>
+                <a href="#procedures" class="btn-secondary"><i class="fa-solid fa-book-open"></i> Fiches procédures</a>
+            </div>
         </div>
     </section>
 
     <!-- Section Parcours -->
     <section id="parcours" class="section">
         <h2>Mon Parcours</h2>
-        
+
         <!-- Sous-partie Scolaire -->
         <h3 class="parcours-category">Scolaire</h3>
         <div class="timeline">
             <div class="timeline-item">
-                <span class="date">2026 - 2027</span>
+                <span class="date">2025 - 2027</span>
                 <h3>BTS SIO - Option SISR (1ère et 2ème année)</h3>
                 <p>Lycée Turgot, Paris 3e</p>
             </div>
@@ -81,14 +87,14 @@
             <div class="cert-card">
                 <img src="certif1.png" alt="Certificat Internet of Things" class="cert-img">
                 <h3>Exploring Internet of Things with Cisco Packet Tracer</h3>
-                <p>Cisco Networking Academy[cite: 1]</p>
-                <span class="cert-date">29 Jan 2026[cite: 1]</span>
+                <p>Cisco Networking Academy</p>
+                <span class="cert-date">29 Jan 2026</span>
             </div>
             <div class="cert-card">
                 <img src="certif2.png" alt="Certificat Premiers pas Packet Tracer" class="cert-img">
                 <h3>Premiers pas avec Cisco Packet Tracer</h3>
-                <p>Cisco Networking Academy[cite: 2]</p>
-                <span class="cert-date">29 Jan 2026[cite: 2]</span>
+                <p>Cisco Networking Academy</p>
+                <span class="cert-date">29 Jan 2026</span>
             </div>
             <div class="cert-card">
                 <img src="certif3.png" alt="Certificat Exploring Networking" class="cert-img">
@@ -132,7 +138,7 @@
             <!-- 3. Cloud & Virtualisation -->
             <div class="skill-box">
                 <i class="fa-solid fa-cloud"></i>
-                <h3>CLOUD & VIRTUALISATION</h3>
+                <h3>CLOUD &amp; VIRTUALISATION</h3>
                 <ul>
                     <li>Mise en place de lab virtuel</li>
                     <li>Création et gestion de machines virtuelles (VM)</li>
@@ -177,7 +183,7 @@
                     <li>Gestion des ressources</li>
                     <li>Suivi des délais</li>
                 </ul>
-                <p class="skill-footer">Méthodologies & Suivi</p>
+                <p class="skill-footer">Méthodologies &amp; Suivi</p>
             </div>
         </div>
     </section>
@@ -187,24 +193,100 @@
         <h2>Projets</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <i class="fa-solid fa-server" style="font-size: 2rem; color: #3b82f6; margin-bottom: 15px;"></i>
-                <h3>Infrastructure Réseau & Virtuelle</h3>
+                <i class="fa-solid fa-server project-icon"></i>
+                <h3>Infrastructure Réseau &amp; Virtuelle</h3>
                 <p>Déploiement d'un environnement de test sous Proxmox, configuration de VLANs et mise en place d'un service Active Directory.</p>
-                <span class="cert-date" style="margin-top: 15px;">Projet Académique / Lab</span>
+                <div class="tags">
+                    <span>Proxmox</span>
+                    <span>VLAN</span>
+                    <span>Active Directory</span>
+                </div>
+                <span class="cert-date">Projet Académique / Lab</span>
             </div>
         </div>
     </section>
 
-    <!-- Section Tableau de Synthèse E5 (Ouverture en nouvel onglet) -->
-    <section id="synthese" class="section">
+    <!-- Section Procédures -->
+    <section id="procedures" class="section">
+        <h2>Procédures Techniques</h2>
+        <p class="section-intro">
+            Documentation pas à pas rédigée en BTS SIO SISR pour le déploiement, la configuration et la sécurisation d'infrastructures.
+        </p>
+
+        <!-- Filtres par catégorie -->
+        <div class="filter-bar" role="group" aria-label="Filtrer les procédures">
+            <button class="filter-btn active" data-filter="all">Toutes</button>
+            <button class="filter-btn" data-filter="systeme">Systèmes</button>
+            <button class="filter-btn" data-filter="reseau">Réseaux</button>
+            <button class="filter-btn" data-filter="securite">Cybersécurité</button>
+        </div>
+
+        <div class="procedures-grid">
+            <!-- Procédure 1 -->
+            <article class="procedure-card" data-category="systeme">
+                <div class="procedure-top">
+                    <span class="badge badge-sys">Systèmes</span>
+                    <span class="proc-format"><i class="fa-regular fa-file-pdf"></i> PDF</span>
+                </div>
+                <h3>Installation &amp; configuration d'un contrôleur de domaine Active Directory</h3>
+                <p>Déploiement du rôle AD DS sur Windows Server, création des Unités d'Organisation (OU), utilisateurs et stratégies de groupe (GPO).</p>
+                <div class="tags">
+                    <span>Windows Server</span>
+                    <span>AD DS</span>
+                    <span>GPO</span>
+                </div>
+                <a href="procedures/active-directory.pdf" target="_blank" class="proc-link">
+                    Consulter la procédure <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <!-- Procédure 2 -->
+            <article class="procedure-card" data-category="reseau">
+                <div class="procedure-top">
+                    <span class="badge badge-net">Réseaux</span>
+                    <span class="proc-format"><i class="fa-regular fa-file-pdf"></i> PDF</span>
+                </div>
+                <h3>Configuration de VLANs et routage inter-VLAN</h3>
+                <p>Segmentation d'un réseau local sur commutateurs et routeurs, configuration des ports d'accès / trunk et vérification de la connectivité.</p>
+                <div class="tags">
+                    <span>Cisco IOS</span>
+                    <span>802.1Q</span>
+                    <span>VLAN</span>
+                </div>
+                <a href="procedures/vlan-intervlan.pdf" target="_blank" class="proc-link">
+                    Consulter la procédure <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <!-- Procédure 3 -->
+            <article class="procedure-card" data-category="securite">
+                <div class="procedure-top">
+                    <span class="badge badge-sec">Cybersécurité</span>
+                    <span class="proc-format"><i class="fa-regular fa-file-pdf"></i> PDF</span>
+                </div>
+                <h3>Supervision d'hôtes et alertes avec Zabbix</h3>
+                <p>Installation de l'agent Zabbix sur machines Linux/Windows, configuration des templates de supervision et mise en place des seuils d'alerte.</p>
+                <div class="tags">
+                    <span>Zabbix</span>
+                    <span>Monitoring</span>
+                    <span>Linux</span>
+                </div>
+                <a href="procedures/supervision-zabbix.pdf" target="_blank" class="proc-link">
+                    Consulter la procédure <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section Tableau de Synthèse E5 -->
+    <section id="synthese" class="section bg-dark">
         <h2>Tableau de Synthèse E5</h2>
-        <div class="synthese-box" style="text-align: center; padding: 40px; background: #1f1f1f; border-radius: 12px; border: 1px solid #2a2a2a;">
-            <i class="fa-solid fa-file-pdf" style="font-size: 3rem; color: #ef4444; margin-bottom: 20px;"></i>
-            <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #ffffff;">Tableau de synthèse des réalisations professionnelles (Session 2027)</h3>
-            <p style="color: #a0a0a0; max-width: 600px; margin: 0 auto 25px auto;">
+        <div class="synthese-box">
+            <i class="fa-solid fa-file-pdf synthese-icon"></i>
+            <h3>Tableau de synthèse des réalisations professionnelles (Session 2027)</h3>
+            <p>
                 Cliquez sur le bouton ci-dessous pour ouvrir le tableau de synthèse officiel (Option SISR - Lycée Turgot) directement dans une nouvelle page.
             </p>
-            <!-- target="_blank" permet d'ouvrir dans une nouvelle page sans télécharger -->
             <a href="E5.pdf" target="_blank" class="btn-pdf">
                 <i class="fa-solid fa-eye"></i> Ouvrir le Tableau de Synthèse E5
             </a>
@@ -212,11 +294,11 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="section contact-section bg-dark">
+    <section id="contact" class="section contact-section">
         <div class="contact-box">
             <h2>Contact</h2>
             <p>Intéressé par mon profil ou envie d'échanger ? N'hésitez pas à m'envoyer un mail ou à consulter mon profil LinkedIn.</p>
-            <div style="margin-top: 20px;">
+            <div class="contact-actions">
                 <a href="mailto:Lounesnael@gmail.com" class="btn"><i class="fa-solid fa-envelope"></i> Envoyer un mail</a>
                 <a href="https://www.linkedin.com/in/ton-profil-linkedin" target="_blank" class="btn-linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
@@ -227,6 +309,25 @@
     <footer>
         <p>&copy; 2026 Naël Lounès. Tous droits réservés.</p>
     </footer>
+
+    <!-- Filtrage simple des procédures -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const procedureCards = document.querySelectorAll('.procedure-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                procedureCards.forEach(card => {
+                    const match = filter === 'all' || card.dataset.category === filter;
+                    card.style.display = match ? 'flex' : 'none';
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
