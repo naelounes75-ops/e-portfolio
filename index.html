@@ -208,73 +208,17 @@
 
     <!-- Section Procédures -->
     <section id="procedures" class="section">
-        <h2>Procédures Techniques</h2>
-        <p class="section-intro">
-            Documentation pas à pas rédigée en BTS SIO SISR pour le déploiement, la configuration et la sécurisation d'infrastructures.
-        </p>
+        <h2>Procédures</h2>
+        <div class="proc-list">
+            <a href="procedures/ocs-inventory.pdf" target="_blank" rel="noopener noreferrer" class="proc-row">
+                <span class="proc-title">Installation OCS Inventory</span>
+                <span class="proc-meta">Debian 13 • PDF</span>
+            </a>
 
-        <!-- Filtres par catégorie -->
-        <div class="filter-bar" role="group" aria-label="Filtrer les procédures">
-            <button class="filter-btn active" data-filter="all">Toutes</button>
-            <button class="filter-btn" data-filter="systeme">Systèmes</button>
-            <button class="filter-btn" data-filter="reseau">Réseaux</button>
-            <button class="filter-btn" data-filter="securite">Cybersécurité</button>
-        </div>
-
-        <div class="procedures-grid">
-            <!-- Procédure 1 -->
-            <article class="procedure-card" data-category="systeme">
-                <div class="procedure-top">
-                    <span class="badge badge-sys">Systèmes</span>
-                    <span class="proc-format"><i class="fa-regular fa-file-pdf"></i> PDF</span>
-                </div>
-                <h3>Installation &amp; configuration d'un contrôleur de domaine Active Directory</h3>
-                <p>Déploiement du rôle AD DS sur Windows Server, création des Unités d'Organisation (OU), utilisateurs et stratégies de groupe (GPO).</p>
-                <div class="tags">
-                    <span>Windows Server</span>
-                    <span>AD DS</span>
-                    <span>GPO</span>
-                </div>
-                <a href="procedures/active-directory.pdf" target="_blank" class="proc-link">
-                    Consulter la procédure <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-            </article>
-
-            <!-- Procédure 2 -->
-            <article class="procedure-card" data-category="reseau">
-                <div class="procedure-top">
-                    <span class="badge badge-net">Réseaux</span>
-                    <span class="proc-format"><i class="fa-regular fa-file-pdf"></i> PDF</span>
-                </div>
-                <h3>Configuration de VLANs et routage inter-VLAN</h3>
-                <p>Segmentation d'un réseau local sur commutateurs et routeurs, configuration des ports d'accès / trunk et vérification de la connectivité.</p>
-                <div class="tags">
-                    <span>Cisco IOS</span>
-                    <span>802.1Q</span>
-                    <span>VLAN</span>
-                </div>
-                <a href="procedures/vlan-intervlan.pdf" target="_blank" class="proc-link">
-                    Consulter la procédure <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-            </article>
-
-            <!-- Procédure 3 -->
-            <article class="procedure-card" data-category="securite">
-                <div class="procedure-top">
-                    <span class="badge badge-sec">Cybersécurité</span>
-                    <span class="proc-format"><i class="fa-regular fa-file-pdf"></i> PDF</span>
-                </div>
-                <h3>Supervision d'hôtes et alertes avec Zabbix</h3>
-                <p>Installation de l'agent Zabbix sur machines Linux/Windows, configuration des templates de supervision et mise en place des seuils d'alerte.</p>
-                <div class="tags">
-                    <span>Zabbix</span>
-                    <span>Monitoring</span>
-                    <span>Linux</span>
-                </div>
-                <a href="procedures/supervision-zabbix.pdf" target="_blank" class="proc-link">
-                    Consulter la procédure <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-            </article>
+            <a href="procedures/glpi.pdf" target="_blank" rel="noopener noreferrer" class="proc-row">
+                <span class="proc-title">Installation GLPI</span>
+                <span class="proc-meta">Debian • PDF</span>
+            </a>
         </div>
     </section>
 
