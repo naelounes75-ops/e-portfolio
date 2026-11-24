@@ -1,4 +1,4 @@
-/* Style Général / Thème Sombre Technique (inspiré arrière-plan & ambiance) */
+/* Style Général / Thème Sombre Technique */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 82px;
@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    /* Fond sombre profond + grille technique subtile + halo lumineux en haut */
     background-color: #090d16;
     background-image:
         radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.16) 0%, rgba(99, 102, 241, 0.07) 35%, transparent 68%),
@@ -80,7 +79,6 @@ header {
 }
 
 .bg-dark {
-    /* Alternance de fond translucide pour laisser apparaître la grille en arrière-plan */
     background: linear-gradient(180deg, rgba(15, 23, 42, 0.72) 0%, rgba(11, 16, 29, 0.82) 100%);
     max-width: 100%;
     padding: 85px 20px;
@@ -92,6 +90,7 @@ header {
 .bg-dark > .cert-grid,
 .bg-dark > .projects-grid,
 .bg-dark > .procedures-grid,
+.bg-dark > .proc-list,
 .bg-dark > .synthese-box,
 .bg-dark > .contact-box {
     max-width: 1040px;
@@ -227,6 +226,13 @@ h2 {
     color: #94a3b8;
 }
 
+.parcours-category {
+    font-size: 1.25rem;
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
 /* Grilles (Certifications, Compétences, Projets, Procédures) */
 .cert-grid, .skills-grid, .projects-grid, .procedures-grid {
     display: grid;
@@ -256,7 +262,89 @@ h2 {
     display: block;
 }
 
-/* Filtres Procédures */
+.skill-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 14px 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.skill-box ul li {
+    margin-bottom: 8px;
+}
+
+.skill-footer {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(148, 163, 184, 0.14);
+    font-size: 0.85rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cert-date {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.cert-img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #2a3242;
+    padding: 6px;
+}
+
+/* Liste Procédures sobre (type capture d'écran) */
+.proc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: rgba(15, 23, 42, 0.78);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 6px;
+    text-decoration: none;
+    color: #e2e8f0;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.proc-row:hover {
+    background: rgba(30, 41, 59, 0.9);
+    border-color: rgba(148, 163, 184, 0.35);
+}
+
+.proc-title {
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: #f1f5f9;
+}
+
+.proc-meta {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* Filtres Procédures (si conservés) */
 .filter-bar {
     display: flex;
     gap: 10px;
@@ -287,7 +375,7 @@ h2 {
     border-color: #38bdf8;
 }
 
-/* Cartes Procédures */
+/* Cartes Procédures / Veille */
 .procedure-card {
     display: flex;
     flex-direction: column;
@@ -406,150 +494,3 @@ h2 {
     align-items: center;
     gap: 10px;
     background: #38bdf8;
-    color: #06101d;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.25s, transform 0.2s;
-}
-
-.btn-pdf:hover {
-    background: #7dd3fc;
-    transform: translateY(-2px);
-}
-
-/* Section Contact */
-.contact-section {
-    text-align: center;
-}
-
-.contact-box {
-    background: rgba(15, 23, 42, 0.82);
-    padding: 40px 25px;
-    border-radius: 12px;
-    border: 1px solid rgba(148, 163, 184, 0.16);
-}
-
-.contact-box h2 {
-    border: none;
-    padding: 0;
-    justify-content: center;
-    display: flex;
-}
-
-.contact-box p {
-    color: #94a3b8;
-    margin-bottom: 20px;
-}
-
-.contact-actions {
-    margin-top: 16px;
-}
-
-.btn, .btn-linkedin {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #ffffff;
-    color: #090d16;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 5px;
-    transition: background 0.25s;
-}
-
-.btn-linkedin {
-    background: #0a66c2;
-    color: #ffffff;
-}
-
-.btn:hover {
-    background: #e2e8f0;
-}
-
-.btn-linkedin:hover {
-    background: #084e96;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 22px;
-    background: rgba(6, 9, 16, 0.95);
-    color: #64748b;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(148, 163, 184, 0.12);
-}
-
-/* Listes de compétences */
-.skill-box ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 14px 0;
-    color: #94a3b8;
-    font-size: 0.9rem;
-    text-align: left;
-}
-
-.skill-box ul li {
-    margin-bottom: 8px;
-}
-
-.skill-footer {
-    margin-top: 18px;
-    padding-top: 14px;
-    border-top: 1px solid rgba(148, 163, 184, 0.14);
-    font-size: 0.85rem;
-    color: #ffffff;
-    font-weight: 600;
-    text-align: center;
-}
-
-.parcours-category {
-    font-size: 1.25rem;
-    color: #38bdf8;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.cert-date {
-    display: block;
-    margin-top: 12px;
-    font-size: 0.85rem;
-    color: #38bdf8;
-    font-weight: 600;
-}
-
-.cert-img {
-    width: 100%;
-    height: 120px;
-    object-fit: contain;
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #2a3242;
-    padding: 6px;
-}
-
-/* Responsive mobile */
-@media (max-width: 820px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        padding: 14px;
-    }
-    .nav-links {
-        gap: 10px 14px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .hero {
-        padding-top: 140px;
-    }
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-}
